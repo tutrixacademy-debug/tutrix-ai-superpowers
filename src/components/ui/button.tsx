@@ -18,11 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Tutrix-specific variants for the homepage
+        hero: "bg-gradient-primary text-primary-foreground hover:bg-gradient-secondary shadow-glow transition transform hover:scale-105 hover:shadow-float font-semibold",
+        cta: "bg-gradient-secondary text-secondary-foreground hover:bg-gradient-primary shadow-card transition transform hover:scale-105 font-bold text-lg",
+        ghost_glow: "bg-transparent border border-primary text-primary hover:bg-primary hover:text-primary-foreground glow-on-hover",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-12 py-4 text-lg",
+        hero: "h-16 rounded-xl px-16 py-5 text-xl font-bold",
         icon: "h-10 w-10",
       },
     },
