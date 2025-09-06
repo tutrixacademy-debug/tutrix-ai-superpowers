@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ProblemSolution from "@/components/ProblemSolution";
 import Differentiators from "@/components/Differentiators";
@@ -8,12 +9,15 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <ProblemSolution />
-      <Differentiators />
-      <ProjectShowcase />
-      <Pricing />
-      <Footer />
+      <Navigation />
+      <div className="pt-16"> {/* Add padding to account for fixed header */}
+        <Hero />
+        <ProblemSolution />
+        <Differentiators />
+        <ProjectShowcase />
+        <Pricing />
+        <Footer />
+      </div>
     </div>
   );
 };
