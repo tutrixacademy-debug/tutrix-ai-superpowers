@@ -5,6 +5,7 @@ import Differentiators from "@/components/Differentiators";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
+import FloatingButton from "@/components/FloatingButton";
 
 const Index = () => {
   return (
@@ -17,7 +18,8 @@ const Index = () => {
         <ProjectShowcase />
         <Pricing />
         <Footer />
-      </div>
+      <FloatingButton />
+    </div>
     </div>
   );
 };
