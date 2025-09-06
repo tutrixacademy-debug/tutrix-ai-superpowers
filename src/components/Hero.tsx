@@ -15,58 +15,58 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-secondary rounded-full blur-2xl opacity-40 animate-float" style={{ animationDelay: '2s' }} />
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent rounded-full blur-lg opacity-50 animate-float" style={{ animationDelay: '4s' }} />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           {/* Left Column - Content */}
-          <div className="space-y-8 text-center lg:text-left">
-            
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">
 
             {/* Main Headline */}
-            <div className="space-y-6">
-              <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] tracking-tight">
+            <div className="space-y-4 sm:space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] tracking-tight">
                 AI is Your New{" "}
                 <span className="text-gradient-primary bg-clip-text text-transparent animate-pulse">Superpower</span>
               </h1>
-              <p className="text-2xl lg:text-3xl text-muted-foreground/90 max-w-2xl font-medium leading-relaxed">
+              <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-muted-foreground/90 max-w-2xl font-medium leading-relaxed mx-auto lg:mx-0">
                 Don't just learn about AI—<span className="text-foreground font-semibold">build with it</span>. Create incredible projects, 
                 get live expert guidance, and join the next generation of AI creators.
               </p>
             </div>
 
             {/* Key Benefits Row */}
-            <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm">
-              <div className="flex items-center gap-2 bg-muted/50 px-4 py-2 rounded-full backdrop-blur-sm">
-                <Users className="h-4 w-4 text-primary" />
-                <span>Live Interactive Sessions</span>
+            <div className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 justify-center lg:justify-start text-xs sm:text-sm">
+              <div className="flex items-center gap-2 bg-muted/50 px-3 sm:px-4 py-2 rounded-full backdrop-blur-sm">
+                <Users className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
+                <span className="whitespace-nowrap">Live Sessions</span>
               </div>
-              <div className="flex items-center gap-2 bg-muted/50 px-4 py-2 rounded-full backdrop-blur-sm">
-                <Zap className="h-4 w-4 text-accent" />
-                <span>Hands-On Projects</span>
+              <div className="flex items-center gap-2 bg-muted/50 px-3 sm:px-4 py-2 rounded-full backdrop-blur-sm">
+                <Zap className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
+                <span className="whitespace-nowrap">Real Projects</span>
               </div>
-              <div className="flex items-center gap-2 bg-muted/50 px-4 py-2 rounded-full backdrop-blur-sm">
-                <Clock className="h-4 w-4 text-secondary" />
-                <span>24/7 Support</span>
+              <div className="flex items-center gap-2 bg-muted/50 px-3 sm:px-4 py-2 rounded-full backdrop-blur-sm">
+                <Clock className="h-3 w-3 sm:h-4 sm:w-4 text-secondary" />
+                <span className="whitespace-nowrap">24/7 Support</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button 
                 variant="hero" 
                 size="hero"
-                className="group"
+                className="group text-sm sm:text-base"
               >
-                Start Your AI Journey - ₹199
-                <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
+                <span className="hidden sm:inline">Start Your AI Journey - ₹199</span>
+                <span className="sm:hidden">Start Learning - ₹199</span>
+                <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6 transition-transform group-hover:translate-x-1" />
               </Button>
               
               <Button 
                 variant="ghost_glow" 
                 size="xl"
-                className="group"
+                className="group text-sm sm:text-base"
               >
-                <Play className="h-5 w-5" />
+                <Play className="h-4 w-4 sm:h-5 sm:w-5" />
                 Watch Demo
               </Button>
             </div>
@@ -94,24 +94,24 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Hero Image */}
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <div className="relative">
               <img 
                 src={heroImage}
                 alt="AI-powered learning experience"
-                className="rounded-2xl shadow-float glow-on-hover w-full max-w-md lg:max-w-none mx-auto"
+                className="rounded-2xl shadow-float glow-on-hover w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto"
               />
               
               {/* Floating UI Elements */}
-              <div className="absolute -top-4 -right-4 bg-gradient-card p-4 rounded-xl shadow-card backdrop-blur-sm animate-float">
+              <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 bg-gradient-card p-2 sm:p-4 rounded-xl shadow-card backdrop-blur-sm animate-float">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                  <span className="text-sm font-medium">AI Assistant Online</span>
+                  <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full"></div>
+                  <span className="text-xs sm:text-sm font-medium">AI Assistant Online</span>
                 </div>
               </div>
               
-              <div className="absolute -bottom-4 -left-4 bg-gradient-card p-4 rounded-xl shadow-card backdrop-blur-sm animate-float" style={{ animationDelay: '1s' }}>
-                <div className="text-sm">
+              <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 bg-gradient-card p-2 sm:p-4 rounded-xl shadow-card backdrop-blur-sm animate-float" style={{ animationDelay: '1s' }}>
+                <div className="text-xs sm:text-sm">
                   <div className="font-medium text-accent">Project Completed!</div>
                   <div className="text-muted-foreground">Your AI chatbot is ready</div>
                 </div>

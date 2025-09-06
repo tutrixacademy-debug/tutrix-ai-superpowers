@@ -3,23 +3,23 @@ import { CheckCircle, X, ArrowRight } from "lucide-react";
 
 const ProblemSolution = () => {
   return (
-    <section className="py-24 relative">
-      <div className="container mx-auto px-6">
+    <section className="py-12 sm:py-16 lg:py-24 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Learning AI Shouldn't Be{" "}
             <span className="text-gradient-secondary">Boring or Lonely</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Most AI courses are just endless videos with no interaction. 
             You watch, you forget, you give up. That's not learning—that's just wasting time.
           </p>
         </div>
 
         {/* Problem vs Solution Comparison */}
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 max-w-6xl mx-auto">
           
           {/* Problem Side */}
           <div className="space-y-8">
