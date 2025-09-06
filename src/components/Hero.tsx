@@ -21,14 +21,6 @@ const Hero = () => {
           {/* Left Column - Content */}
           <div className="space-y-8 text-center lg:text-left">
             
-            {/* Logo */}
-            <div className="flex justify-center lg:justify-start mb-8">
-              <img 
-                src={tutrixLogo} 
-                alt="Tutrix - AI Education Platform" 
-                className="h-16 w-auto"
-              />
-            </div>
 
             {/* Main Headline */}
             <div className="space-y-6">
