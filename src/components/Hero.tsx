@@ -31,13 +31,13 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+            <div className="space-y-6">
+              <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] tracking-tight">
                 AI is Your New{" "}
-                <span className="text-gradient-primary">Superpower</span>
+                <span className="text-gradient-primary bg-clip-text text-transparent animate-pulse">Superpower</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl">
-                Don't just learn about AI—build with it. Create incredible projects, 
+              <p className="text-2xl lg:text-3xl text-muted-foreground/90 max-w-2xl font-medium leading-relaxed">
+                Don't just learn about AI—<span className="text-foreground font-semibold">build with it</span>. Create incredible projects, 
                 get live expert guidance, and join the next generation of AI creators.
               </p>
             </div>
